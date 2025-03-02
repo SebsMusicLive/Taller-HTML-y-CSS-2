@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.cabecera img{
+    width: 150px;
+    height: auto;
+}
