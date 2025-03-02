@@ -16,3 +16,17 @@
     width: 150px;
     height: auto;
 }
+
+.navegacion{
+    width: 50%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu__item a{
+    text-decoration: none;
+}
