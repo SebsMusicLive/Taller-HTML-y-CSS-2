@@ -24,6 +24,10 @@
     height: auto;
 }
 
+.menu_bar{
+    display:none;
+}
+
 .navegacion {
     width: 30%;
 }
@@ -59,8 +63,12 @@
     display: flex;
     flex-direction: column; /* Acomoda el contenido en columna */
     padding-inline: 5%;
-    padding-top: 10%;
+    
     padding-bottom: 50px;
+}
+
+.sep{
+    padding-top: 10%;
 }
 
 /* Estilos mejorados para el texto en "Tipos de Dragones" */
@@ -126,6 +134,14 @@
         padding: 10px 0;
     }
 
+    .menu__item a {
+        font-size: 1em;
+    }
+
+    .sep{
+        padding-top: 40%;
+    }
+
     .contenido h1 {
         font-size: 1.8em;
     }
@@ -147,9 +163,30 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .navegacion {
-        display: none;
+        display: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu__item {
+        padding: 5px 0;
+    }
+
+    .menu__item a {
+        font-size: 0.9em;
+    }
+
+    .sep{
+        padding-top: 40%;
+    }
+
+    .contenido {
+        width: 100%;
     }
 
     .contenido h1 {
@@ -170,6 +207,39 @@
 
     .contenido ul li {
         font-size: 0.9em;
+    }
+    
+    .imagen-dragon img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 280px) {
+    .navegacion {
+        display: 100%;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .sep{
+        padding-top: 40%;
+    }
+}
+
+
+@media (max-width: 160px) {
+    .navegacion {
+        display: 100%;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .sep{
+        padding-top: 40%;
     }
 }
 .lista-dragones {
